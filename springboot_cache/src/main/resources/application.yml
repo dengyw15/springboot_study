@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/dyw?serverTimezone=UTC
+    username: root
+    password: hidyw
+    driver-class-name: com.mysql.cj.jdbc.Driver
+logging.level.com.dyw.springboot_cache: debug
+logging:
+  level: debug
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
