@@ -16,22 +16,27 @@ public class UserController {
 
     @GetMapping("/user/{id}")
     public User getUserById(@PathVariable("id") Integer id) {
-        log.info("test");
         return userService.getUserById(id);
     }
 
     @PostMapping("/updateUser")
-    public void updateUser(@RequestBody User user) {
-        userService.updateUser(user);
+    public User updateUser(@RequestBody User user) {
+        return userService.updateUser(user);
     }
 
     @DeleteMapping("/deleteUser/{id}")
-    public void deleteUser(@PathVariable("id") Integer id) {
+    public Integer deleteUser(@PathVariable("id") Integer id) {
         userService.deleteUser(id);
+        return id;
     }
 
     @PostMapping("/saveUser")
-    public void saveUser(@RequestBody User user) {
-        userService.saveUser(user);
+    public Integer saveUser(@RequestBody User user) {
+        return userService.saveUser(user);
+    }
+
+    @GetMapping("/getUserByName/{userName}")
+    public User getUserByName(@PathVariable("userName") String userName) {
+        return userService.getUserByName(userName);
     }
 }
