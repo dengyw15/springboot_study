@@ -10,10 +10,12 @@ import java.nio.charset.Charset;
 /**
  * 说明:自定义redis序列化方式
  *
+ *
  * @author WangBin
  * @version V1.0
  * @since 2018.03.22
  */
+@Deprecated
 public class FastJsonRedisSerializer<T> implements RedisSerializer<T> {
 
     public static final Charset DEFAULT_CHARSET = Charset.forName("UTF-8");
