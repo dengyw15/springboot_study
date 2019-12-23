@@ -6,6 +6,8 @@ import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 
+import java.util.List;
+
 public interface UserMapper {
 
 
@@ -24,4 +26,5 @@ public interface UserMapper {
 
     @Select("SELECT * FROM user WHERE username = #{userName}")
     public User getUserByName(String userName);
+
 }

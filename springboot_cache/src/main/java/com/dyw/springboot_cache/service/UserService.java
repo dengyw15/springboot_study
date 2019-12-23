@@ -2,7 +2,6 @@ package com.dyw.springboot_cache.service;
 
 import com.dyw.springboot_cache.bean.User;
 import com.dyw.springboot_cache.mapper.UserMapper;
-import lombok.Value;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.*;
