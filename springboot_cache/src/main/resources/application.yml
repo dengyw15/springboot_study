@@ -5,7 +5,7 @@ spring:
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
   redis:
-    host: 116.62.102.175  #redis主机地址
+    host: 116.62.102.175  #redis主机地址(阿里云redis docker)
 logging.level.com.dyw.springboot_cache: debug
 logging:
   level: debug
